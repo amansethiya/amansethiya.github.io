@@ -2,45 +2,8 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ExternalLink, Github, ArrowUpRight, Zap } from 'lucide-react';
 import { Link } from 'react-router';
+import projects from '../../assets/project'
 
-const projects = [
-  {
-    title: 'E-Commerce Platform',
-    category: 'Full Stack',
-    image: 'https://images.unsplash.com/photo-1661956602116-aa6865609028?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjB3ZWJzaXRlJTIwZGVzaWdufGVufDB8fHx8MTcxNDU2Nzg5MA&ixlib=rb-4.1.0&q=80&w=1080',
-    tags: ['React', 'Node.js', 'Stripe', 'Tailwind'],
-    link: '#',
-    github: '#',
-    gradient: 'from-violet-600 to-indigo-600'
-  },
-  {
-    title: 'SaaS Dashboard UI',
-    category: 'Frontend',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbmFseXRpY3MlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzE0NTY3ODkw&ixlib=rb-4.1.0&q=80&w=1080',
-    tags: ['Next.js', 'Recharts', 'Framer Motion'],
-    link: '#',
-    github: '#',
-    gradient: 'from-cyan-500 to-blue-600'
-  },
-  {
-    title: 'Real Estate App',
-    category: 'Mobile / Web',
-    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFsJTIwZXN0YXRlJTIwd2Vic2l0ZXxlbnwwfHx8fDE3MTQ1Njc4OTA&ixlib=rb-4.1.0&q=80&w=1080',
-    tags: ['React Native', 'Firebase', 'Mapbox'],
-    link: '#',
-    github: '#',
-    gradient: 'from-emerald-500 to-teal-600'
-  },
-  {
-    title: 'AI Content Generator',
-    category: 'AI / Tool',
-    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhaSUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzE0NTY3ODkw&ixlib=rb-4.1.0&q=80&w=1080',
-    tags: ['OpenAI API', 'React', 'Tailwind'],
-    link: '#',
-    github: '#',
-    gradient: 'from-fuchsia-600 to-pink-600'
-  }
-];
 
 const categories = ['All', 'Full Stack', 'Frontend', 'Mobile / Web', 'AI / Tool'];
 

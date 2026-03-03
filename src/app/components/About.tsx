@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Briefcase, Code, User, ArrowRight } from 'lucide-react';
-import profileImg from "../../assets/abt.png";
+import profileImg from "../../assets/about.png";
 
 export function About() {
   return (
@@ -16,7 +16,7 @@ export function About() {
             transition={{ duration: 0.6 }}
             className="relative order-2 lg:order-1 max-w-lg mx-auto lg:mx-0"
           >
-            <div className="relative aspect-square rounded-[2rem] overflow-hidden bg-slate-900 border border-slate-800 shadow-2xl">
+            <div className="relative aspect-square rounded-[20rem] overflow-hidden bg-slate-900 border border-slate-800 shadow-2xl">
               <img 
                 src={profileImg} 
                 alt="Aman Gupta" 
