@@ -2,10 +2,40 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ExternalLink, Github, ArrowUpRight, Zap } from 'lucide-react';
 import { Link } from 'react-router';
-import projects from '../../assets/project'
 
 
-const categories = ['All', 'Full Stack', 'Frontend', 'Mobile / Web', 'AI / Tool'];
+
+const projects = [
+    {
+    id: 1,
+    title: "Personal/Portfolio Site",
+    category: "Frontend",
+    image:
+      "https://images.unsplash.com/photo-1661956602116-aa6865609028?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjB3ZWJzaXRlJTIwZGVzaWdufGVufDB8fHx8MTcxNDU2Nzg5MA&ixlib=rb-4.1.0&q=80&w=1080",
+    tags: ["React", "Node.js", "Stripe", "Tailwind"],
+    description:
+      "A full-featured e-commerce platform with secure payment processing and inventory management.",
+    link: "yashaskarne.github.io",
+    github: "#",
+    gradient: "from-violet-600 to-indigo-600",
+  },
+  {
+    id: 2,
+    title: "Hoodie Collection Store",
+    category: "WordPress",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbmFseXRpY3MlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzE0NTY3ODkw&ixlib=rb-4.1.0&q=80&w=1080",
+    tags: ["Next.js", "Recharts", "Framer Motion"],
+    description:
+      "Modern dashboard with real-time analytics and beautiful data visualizations.",
+    link: "Shadowwolf.in",
+    github: "#",
+    gradient: "from-cyan-500 to-blue-600",
+  }
+]
+
+
+const categories = ['All', 'WordPress', 'Frontend', 'Full Stack'];
 
 export function Portfolio() {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -137,6 +167,19 @@ export function Portfolio() {
             ))}
           </AnimatePresence>
         </motion.div>
+
+            {/* No Results */}
+                        {filteredProjects.length === 0 && (
+                          <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            className="text-center py-5"
+                          >
+                            <div className="text-6xl mb-4">🔍</div>
+                            <h3 className="text-2xl font-bold text-white mb-2">No projects found</h3>
+                            <p className="text-slate-400">Try adjusting your search or filter criteria</p>
+                          </motion.div>
+                        )}
 
         <div className="mt-16 text-center">
             <Link to="/projects" className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-slate-900/50 border border-white/10 text-white font-bold hover:bg-white hover:text-black transition-all duration-300 group shadow-[0_0_20px_-5px_rgba(0,0,0,0.5)]">

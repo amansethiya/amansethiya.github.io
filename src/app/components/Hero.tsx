@@ -99,7 +99,7 @@ export function Hero() {
               <div className="flex -space-x-2">
                 {[1,2,3].map(i => (
                   <div key={i} className="w-8 h-8 rounded-full bg-slate-800 border-2 border-[#05050A] flex items-center justify-center text-[10px] text-slate-500">
-                    User
+                    www
                   </div>
                 ))}
               </div>
@@ -153,16 +153,16 @@ export function Hero() {
             }}
             className="absolute -bottom-12 -right-8 p-6 bg-[#0A0A12]/90 border border-slate-700/50 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-xl max-w-xs z-30"
           >
-            <div className="flex justify-between items-center mb-4 border-b border-white/5 pb-2">
-              <div className="flex gap-2">
+            <div className="flex justify-between gap-7 items-center mb-4 border-b border-white/5 pb-2">
+              <div className="flex gap-3">
                 <div className="w-3 h-3 rounded-full bg-rose-500/80 shadow-[0_0_8px_rgba(244,63,94,0.6)]" />
                 <div className="w-3 h-3 rounded-full bg-amber-500/80 shadow-[0_0_8px_rgba(245,158,11,0.6)]" />
                 <div className="w-3 h-3 rounded-full bg-emerald-500/80 shadow-[0_0_8px_rgba(16,185,129,0.6)]" />
               </div>
-              <div className="text-[10px] text-slate-500 font-mono">config.ts</div>
+              <div className="text-[15px] text-slate-500 font-mono">config.ts</div>
             </div>
             
-            <div className="space-y-1.5 font-mono text-xs leading-relaxed">
+            <div className="space-y-1.5 font-mono text-2xs leading-relaxed">
               <div className="flex">
                 <span className="text-fuchsia-400 mr-2">const</span>
                 <span className="text-cyan-300">stack</span>

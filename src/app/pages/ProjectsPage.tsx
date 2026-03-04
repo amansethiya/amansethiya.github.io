@@ -8,7 +8,7 @@ import allProjects from '../../assets/project'
 
 
 
-const categories = ['All', 'Full Stack', 'Frontend', 'Mobile / Web', 'AI / Tool'];
+const categories = ['All', 'WordPress', 'Frontend', 'Full Stack'];
 
 export function ProjectsPage() {
   const [activeCategory, setActiveCategory] = useState('All');
