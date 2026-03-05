@@ -118,6 +118,7 @@ export function Hero() {
           transition={{ duration: 1, ease: "easeOut" }}
           className="relative hidden lg:block perspective-1000"
         >
+          {/*
           <motion.div 
             animate={{ 
               y: [0, -15, 0],
@@ -126,7 +127,7 @@ export function Hero() {
             transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
             className="relative z-10 rounded-3xl overflow-hidden border border-white/10 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)] bg-slate-900/40 backdrop-blur-md group"
           >
-             {/* Gradient Overlay */}
+            
              <div className="absolute inset-0 bg-gradient-to-tr from-violet-600/20 via-transparent to-cyan-500/20 mix-blend-overlay z-20 pointer-events-none" />
              
              <img 
@@ -135,13 +136,17 @@ export function Hero() {
                className="w-full h-auto object-cover opacity-90 group-hover:scale-105 transition-transform duration-1000 ease-out grayscale-[20%] group-hover:grayscale-0"
              />
              
-             {/* Reflection Glare */}
+             
+             
              <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-30 pointer-events-none" />
           </motion.div>
-          
+        
+            */}
           {/* Glowing Orbs behind image */}
           <div className="absolute -top-20 -right-20 w-64 h-64 bg-fuchsia-500/20 rounded-full blur-[80px] animate-pulse delay-700 mix-blend-screen pointer-events-none" />
           <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-cyan-500/20 rounded-full blur-[80px] animate-pulse mix-blend-screen pointer-events-none" />
+          
+
           
           {/* Floating Code Snippet Card */}
           <motion.div 
@@ -151,15 +156,15 @@ export function Hero() {
               y: { repeat: Infinity, duration: 4, ease: "easeInOut", delay: 0.5 },
               default: { duration: 0.8, delay: 0.6 } 
             }}
-            className="absolute -bottom-12 -right-8 p-6 bg-[#0A0A12]/90 border border-slate-700/50 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-xl max-w-xs z-30"
+            className="absolute -bottom-20  ml-50 p-10 bg-[#0A0A12]/90 border border-slate-700/50 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-xl max-w-xs z-30"
           >
-            <div className="flex justify-between gap-7 items-center mb-4 border-b border-white/5 pb-2">
+            <div className="flex justify-between gap-5 items-center mb-4 border-b border-white/5 pb-2">
               <div className="flex gap-3">
                 <div className="w-3 h-3 rounded-full bg-rose-500/80 shadow-[0_0_8px_rgba(244,63,94,0.6)]" />
                 <div className="w-3 h-3 rounded-full bg-amber-500/80 shadow-[0_0_8px_rgba(245,158,11,0.6)]" />
                 <div className="w-3 h-3 rounded-full bg-emerald-500/80 shadow-[0_0_8px_rgba(16,185,129,0.6)]" />
               </div>
-              <div className="text-[15px] text-slate-500 font-mono">config.ts</div>
+              <div className="text-[15px] text-slate-500 font-mono">config.js</div>
             </div>
             
             <div className="space-y-1.5 font-mono text-2xs leading-relaxed">

@@ -26,6 +26,7 @@ export function About() {
             </div>
             
             {/* Experience Card Overlay */}
+            {/*
             <motion.div 
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -35,6 +36,7 @@ export function About() {
               <div className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-1">4+</div>
               <div className="text-slate-400 font-medium leading-tight">Years of<br/>Experience</div>
             </motion.div>
+            */}
           </motion.div>
 
           {/* Text Side */}
