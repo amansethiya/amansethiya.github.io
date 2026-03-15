@@ -5,7 +5,7 @@ import { useEffect, useRef } from 'react';
 const stats = [
   { label: 'Years of Experience', value: 4, suffix: '+', color: 'from-fuchsia-500 to-pink-500' },
   { label: 'Projects Completed', value: 50, suffix: '+', color: 'from-cyan-400 to-blue-500' },
-  { label: 'Happy Clients', value: 30, suffix: '+', color: 'from-emerald-400 to-green-500' },
+  { label: 'Happy Clients', value: 40, suffix: '+', color: 'from-emerald-400 to-green-500' },
   { label: 'Coffee Cups', value: 1000, suffix: '+', color: 'from-amber-400 to-orange-500' },
 ];
 

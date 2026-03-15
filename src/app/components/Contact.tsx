@@ -22,7 +22,7 @@ export function Contact() {
         Accept: "application/json"
       },
       body: JSON.stringify({
-        access_key: "ad63acd0-0873-4986-8901-e86cf658edcc", 
+        access_key: "e6886bc2-1749-4915-b5e8-c0d56847922a", 
         name: data.name,
         email: data.email,
         message: data.message,
@@ -100,10 +100,10 @@ export function Contact() {
               </div>
 
               <div className="mt-12 pt-8 border-t border-slate-800 group-hover:border-slate-700/50 transition-colors">
-                <div className="text-slate-400 font-medium mb-4 flex items-center gap-2">
+                {/* <div className="text-slate-400 font-medium mb-4 flex items-center gap-2">
                   Follow me on social media
                   <ArrowUpRight size={16} className="text-slate-600 group-hover:text-cyan-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
-                </div>
+                </div> */}
               </div>
             </div>
           </motion.div>
@@ -123,7 +123,7 @@ export function Contact() {
                   <input 
                     {...register('name', { required: 'Name is required' })}
                     className="w-full px-5 py-4 bg-slate-950/50 border border-slate-800 rounded-xl focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-400 outline-none text-white transition-all placeholder:text-slate-600 hover:border-slate-700"
-                    placeholder="Aman Sethiya"
+                    placeholder="Your Name"
                   />
                   {errors.name && <span className="text-red-400 text-sm mt-1 ml-1">{errors.name.message}</span>}
                 </div>
@@ -139,7 +139,7 @@ export function Contact() {
                       }
                     })}
                     className="w-full px-5 py-4 bg-slate-950/50 border border-slate-800 rounded-xl focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-400 outline-none text-white transition-all placeholder:text-slate-600 hover:border-slate-700"
-                    placeholder="amansethiya.dev@gmail.com"
+                    placeholder="your_mail@example.com"
                   />
                   {errors.email && <span className="text-red-400 text-sm mt-1 ml-1">{errors.email.message}</span>}
                 </div>
@@ -150,8 +150,7 @@ export function Contact() {
                     {...register('message', { required: 'Message is required' })}
                     rows={4}
                     className="w-full px-5 py-4 bg-slate-950/50 border border-slate-800 rounded-xl focus:ring-2 focus:ring-cyan-500/50 focus:border-cyan-400 outline-none text-white transition-all placeholder:text-slate-600 resize-none hover:border-slate-700"
-                    placeholder="Hey, I'm Developer Aman.
-How Can I Help You..."
+                    placeholder="Start Typing, What's in Your Mind"
                   />
                   {errors.message && <span className="text-red-400 text-sm mt-1 ml-1">{errors.message.message}</span>}
                 </div>

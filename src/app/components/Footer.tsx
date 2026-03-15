@@ -36,9 +36,9 @@ export function Footer() {
             </a>
             
             <div className="flex gap-4">
-              <SocialLink href="#" icon={<Github size={24} />} label="GitHub" />
-              <SocialLink href="#" icon={<Linkedin size={24} />} label="LinkedIn" />
-              <SocialLink href="#" icon={<FaXTwitter size={24} />} label="Twitter" />
+              <SocialLink href="https://github.com/amansethiya" icon={<Github size={24} />} label="GitHub" />
+              <SocialLink href="https://www.linkedin.com/in/amansethiyaa/" icon={<Linkedin size={24} />} label="LinkedIn" />
+              <SocialLink href="https://x.com/amansethiyaa" icon={<FaXTwitter size={24} />} label="Twitter" />
             </div>
           </div>
         </div>

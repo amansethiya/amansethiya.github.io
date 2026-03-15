@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ExternalLink, Github, ArrowUpRight, Zap } from 'lucide-react';
 import { Link } from 'react-router';
+import yashaskarne from "../../assets/projects/yashaskarne.png";
+import sadowwolf from "../../assets/projects/sadowwolf.png";
+import gmp from "../../assets/projects/gmp.png";
+
 
 
 
@@ -10,28 +14,33 @@ const projects = [
     id: 1,
     title: "Personal/Portfolio Site",
     category: "Frontend",
-    image:
-      "https://images.unsplash.com/photo-1661956602116-aa6865609028?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjB3ZWJzaXRlJTIwZGVzaWdufGVufDB8fHx8MTcxNDU2Nzg5MA&ixlib=rb-4.1.0&q=80&w=1080",
-    tags: ["React", "Node.js", "Stripe", "Tailwind"],
-    description:
-      "A full-featured e-commerce platform with secure payment processing and inventory management.",
+    image: yashaskarne,
+    tags: ["React", "Node.js", "Routes", "Css", "UI/UX Design"],
     link: "yashaskarne.github.io",
-    github: "#",
+    github: "github.com/yashaskarne/yashaskarne.github.io",
     gradient: "from-violet-600 to-indigo-600",
   },
   {
     id: 2,
     title: "Hoodie Collection Store",
     category: "WordPress",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbmFseXRpY3MlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzE0NTY3ODkw&ixlib=rb-4.1.0&q=80&w=1080",
-    tags: ["Next.js", "Recharts", "Framer Motion"],
-    description:
-      "Modern dashboard with real-time analytics and beautiful data visualizations.",
+    image: sadowwolf,
+    tags: ["WordPress", "Astra", "Elementor", "Razorpay"],
     link: "Shadowwolf.in",
     github: "#",
     gradient: "from-cyan-500 to-blue-600",
-  }
+  },
+  {
+    id: 3,
+    title: "Leather Goods Site",
+    category: "WordPress",
+    image: gmp,
+    tags: ["WordPress", "Astra", "Elementor", "Razorpay", "Figma Design"],
+    
+    link: "gloriousmaidenspirate.in",
+    github: "github.com/yashaskarne/yashaskarne.github.io",
+    gradient: "from-violet-600 to-indigo-600",
+  },
 ]
 
 

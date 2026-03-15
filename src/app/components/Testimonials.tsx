@@ -1,73 +1,61 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Star, Quote, ChevronLeft, ChevronRight, Play, Volume2 } from 'lucide-react';
+import arundeepvid from '../../assets/arundeep.mp4';
 
 const testimonials = [
    {
     type: 'text',
     name: 'Yashas Karne',
-    role: 'CEO, TechStart',
-    image: 'https://media.licdn.com/dms/image/v2/D5603AQEk3YJQb6o9lA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1728450772955?e=1773878400&v=beta&t=J1iv29raxd-yYf95PNTQSrASRT5do5rMYkkdMnal8Z4',
+    role: 'Personal/Portfolio',
+    image: 'https://media.licdn.com/dms/image/v2/D4E35AQGXgUToLzCHPQ/profile-framedphoto-shrink_200_200/B4EZsJpUjWKcAY-/0/1765393386006?e=1774159200&v=beta&t=eVso1_-Qfrl2lZCCfAv1ne7e06do-J2leapoF5JQRcE',
     content: 'Aman transformed our outdated website into a modern, high-converting platform. His attention to detail and technical expertise are unmatched.',
   },
   {
     type: 'video',
     name: 'Arundeep Singh',
-    role: 'Founder, GrowthAgency',
-    image: 'HwxNzE0NTY3ODkw&ixlib=rb-4.1.0&q=80&w=1080',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4', // Replace with your actual video URL
-    thumbnail: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzE0NTY3ODkw&ixlib=rb-4.1.0&q=80&w=1080',
-    content: 'Working with Aman was a breeze. He understood our requirements perfectly and delivered the project ahead of schedule.',
+    role: 'Glorious Maidens Pirate ',
+    image: 'https://gloriousmaidenspirate.in/wp-content/uploads/2025/02/IMG_20250214_172859_568.jpg',
+    videoUrl: arundeepvid,
+    thumbnail: 'https://gloriousmaidenspirate.in/wp-content/uploads/2025/02/IMG_20250214_172859_568.jpg',
+    
   },
   {
     type: 'text',
     name: 'Aryan Kapoor',
-    role: 'Marketing Director',
+    role: 'Vedic Wash ',
     image: 'https://media.licdn.com/dms/image/v2/D5603AQF-80g4UvWHJQ/profile-displayphoto-scale_100_100/B56ZxiHMQsKMAc-/0/1771172590027?e=1773878400&v=beta&t=-d762J7taxkc5EYA-HAMbQH6tDX8_bHXVI4hl-QgUDI',
     content: 'Aman helped us launch our chemical company brand with a landing page. He was easy to work with, understood the requirements quickly, and delivered a clean and effective website. It was great working with him.',
   },
    {
     type: 'text',
     name: 'Mayank Gupta',
-    role: 'CEO, TechStart',
+    role: 'Lilymin',
     image: 'https://media.licdn.com/dms/image/v2/D5603AQEk3YJQb6o9lA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1728450772955?e=1773878400&v=beta&t=J1iv29raxd-yYf95PNTQSrASRT5do5rMYkkdMnal8Z4',
     content: 'Aman joined us as a freelance website developer and did an excellent job. Despite being a college student, he was very responsive, completed tasks on time, and always suggested creative ideas. I would definitely recommend working with him.',
   },
   {
     type: 'text',
     name: 'Kushagra Singh Rajpoot',
-    role: 'Startup Owner',
+    role: 'Medicine Point, portfolio',
     image: 'https://media.licdn.com/dms/image/v2/D4D03AQFeZp4f8n7h_w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1723379430975?e=1773878400&v=beta&t=uI4t3nAsyrhRk9HyGP4yltmZzMWAfFLec8_K1CKQvfo',
     content: 'Aman is an exceptional WordPress developer with strong technical skills and attention to detail. He delivers high-quality work, communicates clearly, and always focuses on solving problems efficiently. I highly recommend him.',
   },
   {
     type: 'text',
     name: 'Ashutosh Pathak',
-    role: 'E-commerce Manager',
+    role: 'TopGmedia, ecoglobe',
     image: 'https://media.licdn.com/dms/image/v2/D4D03AQGD1inFCJC5cg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1731327544019?e=1773878400&v=beta&t=exmisfbxHhcw5e3eiN4tQun6_F9yepOLxj_bm9fsswQ',
     content: 'We gave our WordPress website project to Aman, and he handled it professionally. He was punctual with deadlines and delivered quality work. If you need someone experienced and reliable, Aman is a great choice.',
   },
   {
     type: 'text',
     name: 'Karan Singh',
-    role: 'Product Manager',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3MTQ1Njc4OTA&ixlib=rb-4.1.0&q=80&w=1080',
+    role: 'Error and Bug ',
+    image: 'https://media.istockphoto.com/id/1135381173/photo/portrait-of-a-young-man-outdoors-smiling.jpg?s=612x612&w=0&k=20&c=J8DKGHI8o-oj8cY1CCNpFY2V9OmVVbJuKSO2DdbMvRg=',
     content: 'Aman did an excellent job designing my website. He was professional, creative, and delivered exactly what I needed. The final result exceeded my expectations, and I highly recommend him for web development projects.',
   },
-  {
-    type: 'text',
-    name: 'Lisa Thompson',
-    role: 'Creative Director',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b21hbiUyMGhlYWRzaG90fGVufDB8fHx8MTcxNDU2Nzg5MA&ixlib=rb-4.1.0&q=80&w=1080',
-    content: 'Aman has an eye for design and a deep understanding of web technologies. He brought our vision to life beautifully.',
-  },
-  {
-    type: 'text',
-    name: 'Robert Williams',
-    role: 'Business Consultant',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYW4lMjBidXNpbmVzcyUyMHBvcnRyYWl0fGVufDB8fHx8MTcxNDU2Nzg5MA&ixlib=rb-4.1.0&q=80&w=1080',
-    content: 'Responsive, professional, and delivers quality work on time. Aman has become my go-to developer for all web projects.',
-  },
+  
 ];
 
 const ITEMS_PER_PAGE = 3;
@@ -178,7 +166,7 @@ export function Testimonials() {
                             {/* Duration Badge */}
                             <div className="absolute bottom-4 left-4 px-3 py-1 bg-black/80 backdrop-blur-sm rounded-lg text-white text-xs font-bold flex items-center gap-1">
                               <Volume2 size={12} />
-                              0:45
+                              00:20
                             </div>
                           </div>
                         )}
@@ -190,9 +178,9 @@ export function Testimonials() {
                         ))}
                       </div>
 
-                      <p className="text-slate-300 leading-relaxed mb-6 relative z-10 italic flex-grow">
+                      {/* <p className="text-slate-300 leading-relaxed mb-6 relative z-10 italic flex-grow">
                         "{testimonial.content}"
-                      </p>
+                      </p> */}
 
                       <div className="flex items-center gap-4 pt-6 border-t border-slate-800/50 group-hover:border-slate-700/50 transition-colors">
                         <div className="relative">
