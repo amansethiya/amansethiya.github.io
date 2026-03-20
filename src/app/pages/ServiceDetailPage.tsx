@@ -32,8 +32,8 @@ const servicesData: Record<string, any> = {
       { title: 'Support', description: 'Ongoing maintenance and updates' }
     ],
     pricing: {
-      starting: '$1,500',
-      delivery: '2-4 weeks'
+      starting: '$99',
+      delivery: '1-2 weeks'
     },
     image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b3JkcHJlc3MlMjBkZXZlbG9wbWVudHxlbnwwfHx8fDE3MTQ1Njc4OTA&ixlib=rb-4.1.0&q=80&w=1080'
   },
@@ -62,8 +62,8 @@ const servicesData: Record<string, any> = {
       { title: 'Deployment', description: 'CI/CD setup and launch' }
     ],
     pricing: {
-      starting: '$2,500',
-      delivery: '3-6 weeks'
+      starting: '$249',
+      delivery: '2-5 weeks'
     },
     image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFjdCUyMGRldmVsb3BtZW50fGVufDB8fHx8MTcxNDU2Nzg5MA&ixlib=rb-4.1.0&q=80&w=1080'
   },
@@ -92,7 +92,7 @@ const servicesData: Record<string, any> = {
       { title: 'Launch', description: 'Deployment and monitoring' }
     ],
     pricing: {
-      starting: '$800',
+      starting: '$99',
       delivery: '1-2 weeks'
     },
     image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYW5kaW5nJTIwcGFnZSUyMGRlc2lnbnxlbnwwfHx8fDE3MTQ1Njc4OTA&ixlib=rb-4.1.0&q=80&w=1080'
@@ -122,7 +122,7 @@ const servicesData: Record<string, any> = {
       { title: 'Reporting', description: 'Results documentation' }
     ],
     pricing: {
-      starting: '$600',
+      starting: '$49',
       delivery: '1 week'
     },
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXJmb3JtYW5jZSUyMG9wdGltaXphdGlvbnxlbnwwfHx8fDE3MTQ1Njc4OTA&ixlib=rb-4.1.0&q=80&w=1080'
@@ -152,8 +152,8 @@ const servicesData: Record<string, any> = {
       { title: 'Launch', description: 'Go live and redirect setup' }
     ],
     pricing: {
-      starting: '$2,000',
-      delivery: '3-5 weeks'
+      starting: '$149',
+      delivery: '2-3 weeks'
     },
     image: 'https://images.unsplash.com/photo-1547658719-da2b51169166?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXNpZ258ZW58MHx8fHwxNzE0NTY3ODkw&ixlib=rb-4.1.0&q=80&w=1080'
   },
@@ -182,7 +182,7 @@ const servicesData: Record<string, any> = {
       { title: 'Support', description: 'Ongoing technical support' }
     ],
     pricing: {
-      starting: '$200/mo',
+      starting: '$75/mo',
       delivery: 'Ongoing'
     },
     image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWludGVuYW5jZXxlbnwwfHx8fDE3MTQ1Njc4OTA&ixlib=rb-4.1.0&q=80&w=1080'
@@ -338,10 +338,10 @@ export function ServiceDetailPage() {
                   transition={{ delay: index * 0.1 }}
                   className="relative"
                 >
-                  <div className={`absolute -top-4 -left-4 w-12 h-12 rounded-full bg-gradient-to-br ${service.gradient} flex items-center justify-center text-white font-bold text-lg shadow-lg`}>
+                  <div className={`absolute z-1 -top-4 -left-4 w-12 h-12 rounded-full bg-gradient-to-br ${service.gradient} flex items-center justify-center text-white font-bold text-lg shadow-lg`}>
                     {index + 1}
                   </div>
-                  <div className="p-8 bg-slate-900/60 rounded-2xl border border-white/5 hover:border-white/10 transition-all h-full pt-10">
+                  <div className="p-8 bg-slate-900/60 z-0 rounded-2xl border border-white/5 hover:border-white/10 transition-all h-full pt-10">
                     <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
                     <p className="text-slate-400">{step.description}</p>
                   </div>
