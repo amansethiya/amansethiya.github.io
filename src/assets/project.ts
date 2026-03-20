@@ -66,31 +66,7 @@ const Projects = [
     github: "#",
     gradient: "from-orange-500 to-red-600",
   },
-  {
-    id: 6,
-    title: "Portfolio CMS",
-    category: "Full Stack",
-    image:
-      "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbXMlMjBkZXNpZ258ZW58MHx8fHwxNzE0NTY3ODkw&ixlib=rb-4.1.0&q=80&w=1080",
-    tags: ["WordPress", "PHP", "MySQL"],
-    description: "",
-    link: "#",
-    github: "#",
-    gradient: "from-blue-600 to-purple-600",
-  },
-  {
-    id: 7,
-    title: "Restaurant Booking System",
-    category: "Full Stack",
-    image:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50fGVufDB8fHx8MTcxNDU2Nzg5MA&ixlib=rb-4.1.0&q=80&w=1080",
-    tags: ["Next.js", "Prisma", "PostgreSQL"],
-    description:
-      "",
-    link: "#",
-    github: "#",
-    gradient: "from-amber-500 to-orange-600",
-  },
+  
 ];
 
 export default Projects;
